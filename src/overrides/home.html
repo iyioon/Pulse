@@ -1,0 +1,47 @@
+{#- This file was automatically generated - do not edit -#} {% extends
+"main.html" %} {% block tabs %} {{ super() }}
+
+<link rel="stylesheet" href="styles.css" />
+
+<section class="mdx-container">
+  <div class="md-grid md-typeset">
+    <div class="mdx-hero">
+      <div class="mdx-hero__content">
+        <h1 class="logo">ARCHIVE</h1>
+        <div class="paragraph">
+          <p>
+            This site is your gateway to my personal repository of notes, files,
+            and crucial information meticulously compiled throughout my journey
+            during NUS.
+          </p>
+          <p>
+            Please respect the confidentiality of this content and refrain from
+            distributing it further.
+          </p>
+          <p class="update-message">
+            Status: Y3S1 In Progress<br />
+            Migration Plan: 2024-09-17 to 2024-09-25
+          </p>
+        </div>
+        <div class="buttons">
+          <a
+            href="/Timeline"
+            title="{{ page.next_page.title | e }}"
+            class="md-button md-button--primary"
+          >
+            View Timeline
+          </a>
+          <a
+            href="https://www.iyioon.com/"
+            class="md-button md-button--secondary"
+          >
+            iyioon
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %} {% block content %}{% endblock %} {% block footer %}
+<script src="scripts.js"></script>
+{% endblock %}

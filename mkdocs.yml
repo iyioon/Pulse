@@ -1,0 +1,106 @@
+site_name: Archive
+
+theme:
+  name: "material"
+  logo: logo.png
+  favicon: logo.png
+  font:
+    text: Noto Serif
+  custom_dir: src/overrides
+
+  features:
+    - navigation.footer
+    - content.code.copy
+    - content.code.select
+    - navigation.top
+    - search.share
+    - navigation.instant
+    - navigation.tabs
+    - navigation.prune
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - navigation.indexes
+    - announce.dismiss
+
+  palette:
+    # Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+
+    # Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep purple
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+
+# Extensions
+markdown_extensions:
+  - footnotes
+  # - attr_list
+  - pymdownx.arithmatex:
+      generic: true
+  # - pymdownx.superfences
+  # - pymdownx.details
+  # - pymdownx.magiclink
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - def_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - extra
+  - tables
+  - fenced_code
+  - toc:
+      permalink: false
+      title: On this page
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - nl2br
+
+plugins:
+  - search
+  - roamlinks
+  - mermaid2
+  - awesome-pages
+  - callouts
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+  - https://unpkg.com/mermaid/dist/mermaid.min.js
+  - javascripts/obsidianImage.js
+
+extra_css: [extra.css]
+
+extra:
+  generator: true
+  social:
+    - icon: fontawesome/solid/address-book
+      link: https://www.iyioon.com/
+    - icon: fontawesome/brands/github
+      link: https://github.com/iyioon
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/iyioon/
+
+copyright: Ji Hoon Moon
