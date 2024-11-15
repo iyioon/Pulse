@@ -1,9 +1,11 @@
-site_name: Archive
+site_name: Pulse
+
+nav:
 
 theme:
   name: "material"
   logo: logo.png
-  favicon: logo.png
+  favicon: logo.jpg
   font:
     text: Noto Serif
   custom_dir: src/overrides
@@ -92,15 +94,5 @@ extra_javascript:
   - javascripts/obsidianImage.js
 
 extra_css: [extra.css]
-
-extra:
-  generator: true
-  social:
-    - icon: fontawesome/solid/address-book
-      link: https://www.iyioon.com/
-    - icon: fontawesome/brands/github
-      link: https://github.com/iyioon
-    - icon: fontawesome/brands/instagram
-      link: https://www.instagram.com/iyioon/
 
 copyright: Ji Hoon Moon

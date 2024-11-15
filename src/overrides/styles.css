@@ -52,7 +52,7 @@
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80");
+    url("https://images.unsplash.com/photo-1700581182740-dd9d3ad180cc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .md-container {
@@ -65,7 +65,8 @@
 }
 
 .mdx-hero__content {
-  height: 100%;
+  position: relative;
+  height: 100% !important;
   padding: 20px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -73,6 +74,24 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+}
+
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.content h1 {
+  font-size: 4em !important;
+  color: black;
+  font-family: "Pacifico";
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 76.25em) {
@@ -88,6 +107,7 @@
 
 .logo {
   font-family: "Pacifico";
+  font-size: 100px !important;
 }
 
 p {
