@@ -5,7 +5,7 @@ nav:
 theme:
   name: "material"
   logo: logo.png
-  favicon: logo.jpg
+  favicon: logo.png
   font:
     text: Noto Serif
   custom_dir: src/overrides

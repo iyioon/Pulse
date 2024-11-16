@@ -7,20 +7,38 @@
   <div class="md-grid md-typeset">
     <div class="mdx-hero">
       <div class="mdx-hero__content">
-        <div class="content">
-          <h1>Beat Your Best, One Task at a Time</h1>
+        <div class="home-content">
+          <div class="home-content-main">
+            <div class="logo">Beat Your Best, One Task at a Time</div>
+            <div class="paragraph">
+              <p>
+                Stay focused, take it step by step, and watch your productivity
+                grow with Pulse.
+                <br />
+                A calm, meaningful way to achieve your best
+              </p>
+            </div>
+            <div class="buttons">
+              <a
+                href="/1_Context"
+                title="{{ page.next_page.title | e }}"
+                class="md-button md-button--primary"
+              >
+                Learn More
+              </a>
+              <a
+                href="https://www.iyioon.com/"
+                class="md-button md-button--secondary"
+              >
+                Try Demo
+              </a>
+            </div>
+          </div>
         </div>
-        <!-- <h1 class="logo">Beat Your Best, One Task at a Time</h1>
-        <div class="buttons">
-          <a href="/1.User Requirements" class="md-button md-button--primary"
-            >Learn More</a
-          >
-          <a href="/2.Prototype Design" class="md-button">Try Prototype</a>
-        </div> -->
       </div>
     </div>
   </div>
 </section>
-{% endblock %} {% block content %}
-<script src="scripts.js" defer></script>
-{% endblock %} {% block footer %} {% endblock %}
+{% endblock %} {% block content %}{% endblock %} {% block footer %}
+<script src="scripts.js"></script>
+{% endblock %}

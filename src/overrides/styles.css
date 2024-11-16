@@ -39,7 +39,7 @@
       var(--md-default-bg-color),
       var(--md-default-bg-color)
     ),
-    url("https://images.unsplash.com/photo-1495215871224-568f5124ca61?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80");
+    url("https://images.unsplash.com/photo-1496450681664-3df85efbd29f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 /* url("https://images.unsplash.com/photo-1476108621677-3c620901b5e7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"); */
@@ -52,7 +52,7 @@
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 1)
     ),
-    url("https://images.unsplash.com/photo-1700581182740-dd9d3ad180cc?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
 }
 
 .md-container {
@@ -65,8 +65,7 @@
 }
 
 .mdx-hero__content {
-  position: relative;
-  height: 100% !important;
+  height: 100%;
   padding: 20px;
   padding-top: 70px;
   padding-bottom: 70px;
@@ -76,28 +75,59 @@
   position: relative;
 }
 
-.content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.content h1 {
-  font-size: 4em !important;
-  color: black;
-  font-family: "Pacifico";
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
 @media (min-width: 76.25em) {
   .mdx-hero__content {
     height: 100%;
     padding: 70px;
+  }
+}
+
+[data-md-color-scheme="default"] {
+  --home-bg-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.7)
+  );
+}
+
+[data-md-color-scheme="slate"] {
+  --home-bg-gradient: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.5),
+    var(--md-default-bg-color),
+    var(--md-default-bg-color)
+  );
+}
+
+.home-content {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 60dvh;
+  padding-bottom: 60px;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: var(--home-bg-gradient);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content-main {
+  width: 80%;
+}
+
+@media (min-width: 450px) {
+  .home-content {
+    width: 100%;
   }
 }
 
@@ -107,20 +137,11 @@
 
 .logo {
   font-family: "Pacifico";
-  font-size: 100px !important;
-}
-
-p {
-  text-align: center;
-}
-
-.update-message {
-  font-style: italic;
+  font-size: 2em;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
-  justify-content: center;
 }
