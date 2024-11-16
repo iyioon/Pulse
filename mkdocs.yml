@@ -1,6 +1,10 @@
 site_name: Pulse
 
-nav:
+# Add the site URL for the reverse proxy path
+site_url: https://iyioon.com/projects/pulse/
+
+# Disable directory URLs for compatibility with the reverse proxy
+use_directory_urls: false
 
 theme:
   name: "material"
