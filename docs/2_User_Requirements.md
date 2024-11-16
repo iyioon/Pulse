@@ -105,6 +105,6 @@ At the end of the day, Jane checks Pulse’s daily summary to review her achieve
 - Stay focused on individual subtasks without getting distracted.
 - Feel a sense of progress and accomplishment through visual feedback.
 - Identify areas for improvement based on her productivity pattern
-![](Attachments/2_User_Requirements.png)
+  ![](Attachments/2_User_Requirements.png)
 
-<span class="center-menu">[Download](Attachments/2_User_Requirements.png)</span>
+<span class="center-menu">[View Image](Attachments/2_User_Requirements.png)</span>
